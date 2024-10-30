@@ -28,30 +28,16 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="google-font">
+<body class="google-font bg-[#F4F4F4]">
     <!-- header section -->
-    <header class="container mx-auto">
-        <div class="navbar bg-base-100">
+    <header class="container mx-auto bg-[#F4F4F4]">
+        <div class="navbar bg-[#F4F4F4] pt-8 space-x-4">
             <div class="navbar-start">
-                <div class="dropdown">
-                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                            stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M4 6h16M4 12h8m-8 6h16" />
-                        </svg>
-                    </div>
-                    <ul tabindex="0"
-                        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                        <li><a>Home</a></li>
-                        <li><a>Services</a></li>
-                        <li><a>Portfolio</a></li>
-                        <li><a>Blogs</a></li>
-                        <li><a>Contact Us</a></li>
-                    </ul>
-                </div>
-                <a class="btn btn-ghost text-2xl font-bold">Rinterio</a>
+                <a class="btn btn-ghost text-2xl font-bold">
+                    <i class="fa-solid fa-arrow-right text-black bg-[#ABEF5F] rounded-full p-1 -rotate-45"></i> Rinterio
+                </a>
             </div>
+
             <div class="navbar-center hidden lg:flex">
                 <ul class="menu menu-horizontal px-1 text-sm justify-center">
                     <li class="hover:text-black duration-300 easy-in-out text-black font-semibold"><a>Home</a></li>
@@ -61,19 +47,42 @@
                     <li class="hover:text-black duration-300 easy-in-out"><a>Contact Us</a></li>
                 </ul>
             </div>
-            <div class="navbar-end flex space-x-5">
+
+            <div class="navbar-end lg:hidden">
+                <div class="dropdown relative">
+                    <div tabindex="0" role="button" class="btn btn-ghost">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow absolute right-0">
+                        <li><a>Home</a></li>
+                        <li><a>Services</a></li>
+                        <li><a>Portfolio</a></li>
+                        <li><a>Blogs</a></li>
+                        <li><a>Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="navbar-end space-x-0 pl-64 justify-evenly hidden md:flex">
                 <div class="space-x-3">
-                    <span class="bg-[#E9E9E9] p-2 rounded-full justify-center">
+                    <span class="bg-white p-2 rounded-full justify-center">
                         <i class="fa-solid fa-magnifying-glass"></i>
                     </span>
-                    <span class="bg-[#E9E9E9] p-2 rounded-full justify-center">
+                    <span class="bg-white p-2 rounded-full justify-center">
                         <i class="fa-solid fa-cart-shopping"></i>
                     </span>
                 </div>
-                <a class="btn bg-[#ABEF5F] text-black rounded-3xl">Book Consult</a>
+                <a class="btn bg-[#ABEF5F] text-black rounded-3xl">Book Consult<i
+                        class="fa-solid fa-arrow-right text-white bg-black rounded-full p-2 -rotate-45"></i></a>
             </div>
         </div>
     </header>
+
     <!-- main section -->
     <main>
 
